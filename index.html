@@ -12,15 +12,6 @@
       href="./images/favicon-32x32.png"
     />
 
-    <style>
-      @media (min-width: 40rem) {
-        body {
-          background-image: url(./images/pattern-background-desktop.svg);
-          background-size: cover;
-          background-repeat: no-repeat;
-        }
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Order summary card</title>
   </head>
@@ -32,26 +23,27 @@
         alt="illustration-hero"
         class="hero"
       />
-      <hgroup>
-        <h2 class="heading">Order Summary</h2>
+
+      <section class="summary">
+        <h2>Order Summary</h2>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-      </hgroup>
 
-      <section id="subscription">
-        <img src="./images/icon-music.svg" alt="music-icon" />
-        <div>
-          <span>Annual Plan</span>
-          <span>$59.99/year</span>
-        </div>
-        <button type="button">Change</button>
-      </section>
+        <section class="subscription">
+          <img src="./images/icon-music.svg" alt="music-icon" />
+          <div>
+            <span class="plan">Annual Plan</span>
+            <span class="price">$59.99/year</span>
+          </div>
+          <button type="button" class="change">Change</button>
+        </section>
 
-      <section class="buttons">
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+        <section class="buttons">
+          <button type="button" class="payment">Proceed to Payment</button>
+          <button type="button" class="cancel">Cancel Order</button>
+        </section>
       </section>
     </main>
   </body>
